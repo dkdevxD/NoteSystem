@@ -1,0 +1,35 @@
+.categorias {
+  width: 95%;
+  height: auto;
+  padding: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.categorias input {
+  margin-left: 50px;
+  height: 30px;
+  align-self: center;
+}
+
+.categorias ul {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  width: 100%;
+}
+
+.categorias li {
+  display: flex;
+  width: auto;
+  height: auto;
+  margin: 2px;
+  padding: 0.5em;
+  align-self: center;
+  background-color: darkgrey;
+  border-radius: 10px;
+}
+
+.card-categoria {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
