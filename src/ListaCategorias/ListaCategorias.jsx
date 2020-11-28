@@ -23,7 +23,8 @@ export default class ListaCategorias extends Component {
   handleInput(event) {
     if (event.key === 'Enter') {
       let categoria = event.target.value;
-      this.props.addCategoria(categoria)
+      this.props.addCategoria(categoria);
+      event.target.value = ''
     }
   }
 
@@ -32,6 +33,7 @@ export default class ListaCategorias extends Component {
       <section className="categorias">
 
         <input
+          className="inputCategoria"
           type="text"
           placeholder="Adicione uma categoria"
           onKeyPress={this.handleInput.bind(this)}

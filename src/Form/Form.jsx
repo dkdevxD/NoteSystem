@@ -37,6 +37,7 @@ export default class Form extends Component {
   criaNota(event) {
     event.preventDefault()
     this.props.criaNota(this.titulo, this.texto, this.categoria);
+    event.target.reset();
   }
 
   render() {
